@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@sima-land/ui-nucleons/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

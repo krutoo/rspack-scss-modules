@@ -1,0 +1,27 @@
+{
+  "name": "rspack-scss-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rspack/cli": "^0.7.0",
+    "@rspack/core": "^0.7.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "sass-embedded": "^1.77.2",
+    "sass-loader": "^14.2.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@sima-land/ui-quarks": "^5.0.0",
+    "classnames": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

@@ -1,0 +1,41 @@
+@use '../colors';
+@use '../utils';
+@use '../shadows';
+
+.arrow-button {
+  @include utils.focus-visible;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  transition: box-shadow 200ms ease-out;
+  color: colors.$basic-gray87;
+  &:not(:disabled):hover {
+    cursor: pointer;
+  }
+  &:disabled {
+    color: colors.$basic-gray24;
+  }
+  &.size-s {
+    width: 32px;
+    height: 32px;
+    @include shadows.box-shadow('z2');
+    &:not(:disabled):hover {
+      @include shadows.box-shadow('z3');
+    }
+  }
+  &.size-l {
+    width: 56px;
+    height: 56px;
+    @include shadows.box-shadow('z3');
+    &:not(:disabled):hover {
+      @include shadows.box-shadow('z4');
+    }
+  }
+}
